@@ -1,0 +1,13 @@
+p{
+margin-bottom: 0px;
+  font-size: .8em;
+}
+
+.profilecard{
+  min-height: 132px;
+}
+
+.btn-edit{
+  top: 0px;right: 5px;
+  position: absolute;
+}
