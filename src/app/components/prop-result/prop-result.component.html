@@ -19,7 +19,7 @@
         <div id="imgs{{j}}" class="carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner">
              <div class="carousel-item" *ngFor="let v of propiedad.files let f = first" [ngClass]="{'active' : f}">
-               <img class="card-img" src="./{{v['nombre']}}" alt="{{v.titulo}}">
+               <img class="card-img" src="./{{v['vista_previa']}}" alt="{{v.titulo}}">
              </div>
           </div>
 
@@ -42,7 +42,7 @@
               <span *ngIf="propiedad.tipo_prop_nombre != null">{{propiedad.tipo_prop_nombre}}     </span>
               <span *ngIf="propiedad.banios != 0"><img src="assets/img/bed.svg" style="width:25px"> {{propiedad.banios}} </span>
               <span *ngIf="propiedad.dormitorios != 0"><img src="assets/img/bath.svg" style="width:25px"> {{propiedad.dormitorios}} </span>
-              <span class="card-precio">{{propiedad.moneda_simbolo}} <strong>{{propiedad.precio}}</strong></span>
+              <span class="card-precio">{{propiedad.moneda_simbolo}} <strong>{{propiedad.precio  | number:'1.2'}}</strong></span>
             </div>
           </div>
         </div>
