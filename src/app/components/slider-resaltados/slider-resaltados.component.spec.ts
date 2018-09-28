@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainMenuComponent } from './main-menu.component';
+import { SliderResaltadosComponent } from './slider-resaltados.component';
 
-describe('MainMenuComponent', () => {
-  let component: MainMenuComponent;
-  let fixture: ComponentFixture<MainMenuComponent>;
+describe('SliderResaltadosComponent', () => {
+  let component: SliderResaltadosComponent;
+  let fixture: ComponentFixture<SliderResaltadosComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainMenuComponent ]
+      declarations: [ SliderResaltadosComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainMenuComponent);
+    fixture = TestBed.createComponent(SliderResaltadosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -53,6 +53,7 @@ import { UserProfileModalComponent } from './components/user-profile-modal/user-
 
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { SliderResaltadosComponent } from './components/slider-resaltados/slider-resaltados.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -86,7 +87,8 @@ registerLocaleData(localeEs);
     PerfilViewComponent,
     ImbProfileViewComponent,
     UserProfileFormComponent,
-    UserProfileModalComponent
+    UserProfileModalComponent,
+    SliderResaltadosComponent
   ],
   imports: [
     BrowserModule,

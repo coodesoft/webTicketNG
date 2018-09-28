@@ -1,8 +1,6 @@
-<nav [ngClass]="{'navbar':true, 'navbar-white':!navbar_red, 'navbar-red':navbar_red, 'navbar-expand-lg':true, 'fixed-top':true, 'navbar-light':true}">
+<nav class="navbar-expand-lg navbar">
   <a class="navbar-brand" routerLink="/">
-    <img src="assets/logo.svg" width="auto" height="50px" alt="" *ngIf="navbar_red">
-    <img src="assets/logo-red.svg" width="auto" height="50px" alt="" *ngIf="!navbar_red">
-    creoprop
+    <img src="assets/logo.svg" width="auto" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,27 +17,41 @@
     </div>
     <div class="col-sm-auto order-last">
       <ul class="navbar-nav mr-auto align-self-end">
-        <li class="nav-item" routerLink="/select-plan" *ngIf = "!registrado">
-          <a class="nav-link">PUBLICAR UNA PROPIEDAD</a>
-        </li>
-        <li class="nav-item" routerLink="/new-prop" *ngIf = "registrado">
-          <a class="nav-link">PUBLICAR UNA PROPIEDAD</a>
-        </li>
-        <li class="nav-item" data-toggle="modal" data-target="#modalReg" *ngIf = "!registrado">
-          <a class="nav-link">REGISTRARME</a>
-        </li>
-        <li class="nav-item" data-toggle="modal" data-target="#loginModal" *ngIf = "!registrado">
-          <a class="nav-link">INICIAR SESIÓN</a>
-        </li>
-        <li class="nav-item dropdown" *ngIf = "registrado">
+        
+        <li class="nav-item dropdown" *ngIf = "!registrado">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            MI CUENTA ({{userName}})
+            Movies
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
             <a class="dropdown-item" (click)="logOut()">SALIR</a>
           </div>
         </li>
+
+        <li class="nav-item dropdown" *ngIf = "!registrado">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Modules
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
+            <a class="dropdown-item" (click)="logOut()">SALIR</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown" *ngIf = "!registrado">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
+            <a class="dropdown-item" (click)="logOut()">SALIR</a>
+          </div>
+        </li>
+
+        <li class="nav-item" routerLink="/new-prop" *ngIf = "!registrado">
+          <a class="nav-link">Contact</a>
+        </li>
+
       </ul>
     </div>
   </div>

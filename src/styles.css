@@ -1,10 +1,8 @@
-@font-face {  font-family: 'Roboto-Regular';  src: url('assets/Roboto-Regular.ttf'); }
-@font-face {  font-family: 'Roboto-Bold';  src: url('assets/Roboto-Bold.ttf'); }
-@font-face {  font-family: 'Product-Sans-Regular';  src: url('assets/Product-Sans-Regular.ttf'); }
+@font-face {  font-family: 'options';  src: url('assets/options.ttf'); }
 
-html, body{ height:100%; font-family: 'Roboto-Regular';}
+html, body{ height:100%; }
 
-body { padding-top: 3.7em;}
+body { background: #aaa;}
 
 .btn-abs{
   position: absolute;
@@ -13,6 +11,8 @@ body { padding-top: 3.7em;}
 .btn-fa:hover{
   color: #d01;
 }
+
+.container-fluid{padding-right: 0px !important; padding-left:0px !important; }
 
 .modal .m-t{
   font-size: 1.8em;
@@ -114,7 +114,7 @@ body { padding-top: 3.7em;}
     padding-left: 2em;
 }
 
-a {color: ##03a9ec !important; font-weight: bold; cursor:pointer;}
+a {cursor:pointer;}
 
 .form-control:focus {border-color: #2b9ddd; box-shadow: none;}
 

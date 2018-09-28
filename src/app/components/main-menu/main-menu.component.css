@@ -1,42 +1,16 @@
 .navbar-brand, .nav-link{
-  color: #fff !important;
-  font-weight: bold !important;
+  
 }
 
 .nav-link{
-  font-family: 'Roboto-Bold';
+  font-family: lato, options,sans-serif;
   margin-left: 35px;
 }
 
-.navbar-brand {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  font-family: 'Product-Sans-Regular';
-  font-size: 1.9em;
-}
+.navbar-brand { height: 200px; width: 200px; }
+.navbar-brand img { position: absolute; top: 0px; }
 
-.navbar{
-  height: 3.7em;
-}
-
-.navbar-red{
-  background-color:#ed1b24ff !important;
-}
-
-.navbar-white{
-    background-color:#fff;
-    box-shadow: 0 1px 6px rgba(0,0,0,.25);
-}
-
-.navbar-white .navbar-brand{
-  color:#ed1b24ff !important;
-}
-
-.navbar-collapse{
-  background-color:#ed1b24ff !important;
-}
+.navbar{ height: 86px; background:#fff; padding: 0 48px; }
 
 nav .form-control{
     border-radius: 0px;
