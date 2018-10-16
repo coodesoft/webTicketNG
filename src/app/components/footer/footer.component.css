@@ -13,37 +13,19 @@ footer .list-group-item{
   padding: 0px;
 }
 
-.img-footer{
-  height: 3em;
-}
-
-.footer-3{
-  height: 2.6em;
-  padding: 0.3em;
-  background-color: #fff;
-  font-size: 1.1em;
-}
-
-.footer-1{
-  padding: 1em;
-}
-
-.footer-1 .tit{
-  font-weight: lighter;
-}
-
-.footer-2 {
-  color: #76a6c7;
-  padding-bottom: 1em;
-}
-
-.footer-2 li{
+.scroll-to-top {
+  float: right;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  background: #ccc;
   cursor: pointer;
-
-}
-
-.subtitle {
-  color: black;
-  font-size: 1.2em;
-  margin-bottom: 2px;
+  position: relative;
+  z-index: 999;
+  -webkit-transition: background-color .4s;
+  -moz-transition: background-color .4s;
+  -ms-transition: background-color .4s;
+  -o-transition: background-color .4s;
+  transition: background-color .4s;
 }
