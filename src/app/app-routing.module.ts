@@ -6,8 +6,10 @@ import { PrivacidadPageComponent } from './pages/privacidad-page/privacidad-page
 import { TermsyCondPageComponent } from './pages/termsy-cond-page/termsy-cond-page.component';
 import { NotFoundComponent }       from './pages/not-found/not-found.component';
 import { SearchComponent }         from './pages/search/search.component';
+import { HomeComponent }           from './pages/home/home.component';
 
 const routes: Routes = [
+  { path: '',                component: PrivacidadPageComponent },
   { path: 'privacidad',      component: PrivacidadPageComponent },
   { path: 'terminos',        component: TermsyCondPageComponent },
   { path: "404",             component: NotFoundComponent },

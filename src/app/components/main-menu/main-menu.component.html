@@ -1,58 +1,60 @@
-<nav class="navbar-expand-lg navbar">
-  <a class="navbar-brand" routerLink="/">
-    <img src="assets/logo.svg" width="auto" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div class="container">
+  <nav class="navbar-expand-lg navbar">
+    <a class="navbar-brand" routerLink="/">
+      <img src="assets/logo.svg" width="auto" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse row" id="navbarSupportedContent" *ngIf="navbar_red">
-    <form class="my-2 my-lg-0 col-sm-4">
-      <div class="input-group add-on">
-      <input class="form-control" placeholder="Buscar por palabra clave" name="srch-term" id="srch-term" type="text" >
-      <div class="btn-search"><i class="fa fa-search"></i></div>
+    <div class="collapse navbar-collapse row" id="navbarSupportedContent" *ngIf="navbar_red">
+      <form class="my-2 my-lg-0 col-sm-4">
+        <div class="input-group add-on">
+        <input class="form-control" placeholder="Buscar por palabra clave" name="srch-term" id="srch-term" type="text" >
+        <div class="btn-search"><i class="fa fa-search"></i></div>
+      </div>
+      </form>
+      <div class="col">
+      </div>
+      <div class="col-sm-auto order-last">
+        <ul class="navbar-nav mr-auto align-self-end">
+
+          <li class="nav-item dropdown" *ngIf = "!registrado">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Movies
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
+              <a class="dropdown-item" (click)="logOut()">SALIR</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown" *ngIf = "!registrado">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Modules
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
+              <a class="dropdown-item" (click)="logOut()">SALIR</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown" *ngIf = "!registrado">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Features
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
+              <a class="dropdown-item" (click)="logOut()">SALIR</a>
+            </div>
+          </li>
+
+          <li class="nav-item" routerLink="/new-prop" *ngIf = "!registrado">
+            <a class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-    </form>
-    <div class="col">
-    </div>
-    <div class="col-sm-auto order-last">
-      <ul class="navbar-nav mr-auto align-self-end">
-        
-        <li class="nav-item dropdown" *ngIf = "!registrado">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Movies
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
-            <a class="dropdown-item" (click)="logOut()">SALIR</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown" *ngIf = "!registrado">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Modules
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
-            <a class="dropdown-item" (click)="logOut()">SALIR</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown" *ngIf = "!registrado">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Features
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/mi-cuenta">ÁREA PERSONAL</a>
-            <a class="dropdown-item" (click)="logOut()">SALIR</a>
-          </div>
-        </li>
-
-        <li class="nav-item" routerLink="/new-prop" *ngIf = "!registrado">
-          <a class="nav-link">Contact</a>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
+</div>

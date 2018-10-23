@@ -1,5 +1,5 @@
 .navbar-brand, .nav-link{
-  
+
 }
 
 .nav-link{
@@ -7,10 +7,9 @@
   margin-left: 35px;
 }
 
-.navbar-brand { height: 200px; width: 200px; }
 .navbar-brand img { position: absolute; top: 0px; }
 
-.navbar{ height: 86px; background:#fff; padding: 0 48px; }
+.navbar{ height: 86px; background:#fafafa; padding: 0 48px; }
 
 nav .form-control{
     border-radius: 0px;
