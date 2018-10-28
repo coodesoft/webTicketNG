@@ -16,7 +16,6 @@ export class MainMenuComponent implements OnInit {
   ){}
 
   registrado = false;
-  navbar_red = true;
 
   userName:string = '';
 
@@ -31,9 +30,9 @@ export class MainMenuComponent implements OnInit {
     this.router.events.subscribe((e) => {
       if(e instanceof RouterEvent){
         if (e.url == '/select-plan' || e.url == '/update-plan'){
-          this.navbar_red = false;
+          
         } else {
-          this.navbar_red = true;
+         
         }
       }
     });

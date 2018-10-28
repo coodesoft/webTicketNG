@@ -18,23 +18,25 @@ import { TermsyCondPageComponent } from './pages/termsy-cond-page/termsy-cond-pa
 import { NotFoundComponent }       from './pages/not-found/not-found.component';
 import { SearchComponent }         from './pages/search/search.component';
 
-import { MainMenuComponent }      from './components/main-menu/main-menu.component';
-import { FooterComponent }        from './components/footer/footer.component';
-import { AlertComponent } from './components/alert/alert.component';
+import { MainMenuComponent }  from './components/main-menu/main-menu.component';
+import { FooterComponent }    from './components/footer/footer.component';
+import { AlertComponent }     from './components/alert/alert.component';
 
 import { registerLocaleData } from '@angular/common';
-import localeEs from '@angular/common/locales/es';
-import { HomeComponent } from './pages/home/home.component';
-import { ContactoComponent } from './pages/contacto/contacto.component';
-import { EventosComponent } from './pages/eventos/eventos.component';
-import { SmartpassComponent } from './pages/smartpass/smartpass.component';
-import { DetalleComponent } from './pages/publicacion/detalle/detalle.component';
-import { SliderResaltadosComponent } from './components/slider-resaltados/slider-resaltados.component';
-import { CategorizadosComponent } from './components/categorizados/categorizados.component';
-import { PublicidadComponent } from './components/publicidad/publicidad.component';
-import { OfertasComponent } from './components/ofertas/ofertas.component';
-import { SliderEncabezadoComponent } from './components/slider-encabezado/slider-encabezado.component';
+import localeEs               from '@angular/common/locales/es';
 registerLocaleData(localeEs);
+
+import { HomeComponent }      from './pages/home/home.component';
+import { ContactoComponent }  from './pages/contacto/contacto.component';
+import { EventosComponent }   from './pages/eventos/eventos.component';
+import { SmartpassComponent } from './pages/smartpass/smartpass.component';
+
+import { DetalleComponent }          from './pages/publicacion/detalle/detalle.component';
+import { SliderResaltadosComponent } from './components/slider-resaltados/slider-resaltados.component';
+import { CategorizadosComponent }    from './components/categorizados/categorizados.component';
+import { PublicidadComponent }       from './components/publicidad/publicidad.component';
+import { OfertasComponent }          from './components/ofertas/ofertas.component';
+import { SliderEncabezadoComponent } from './components/slider-encabezado/slider-encabezado.component';
 
 @NgModule({
   declarations: [

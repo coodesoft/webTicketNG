@@ -1,15 +1,22 @@
-.navbar-brand, .nav-link{
-
-}
+.navbar-brand{ width: 245px; }
 
 .nav-link{
   font-family: lato, options,sans-serif;
-  margin-left: 35px;
+  margin-left: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #333 !important;
 }
 
-.navbar-brand img { position: absolute; top: 0px; }
+.nav-item{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-.navbar{ height: 86px; background:#fafafa; padding: 0 48px; }
+.navbar-brand img { position: absolute; top: 0px; margin-top: 22px;margin-bottom: 12px; height: 72px;}
+
+.navbar{ height: 105px; background:#fafafa; }
+.navbar-nav .active, .nav-item:hover {border-bottom: 5px solid #f31e1e;}
 
 nav .form-control{
     border-radius: 0px;

@@ -6,15 +6,23 @@ import { PrivacidadPageComponent } from './pages/privacidad-page/privacidad-page
 import { TermsyCondPageComponent } from './pages/termsy-cond-page/termsy-cond-page.component';
 import { NotFoundComponent }       from './pages/not-found/not-found.component';
 import { SearchComponent }         from './pages/search/search.component';
-import { HomeComponent }           from './pages/home/home.component';
+
+import { HomeComponent }      from './pages/home/home.component';
+import { ContactoComponent }  from './pages/contacto/contacto.component';
+import { EventosComponent }   from './pages/eventos/eventos.component';
+import { SmartpassComponent } from './pages/smartpass/smartpass.component';
 
 const routes: Routes = [
-  { path: '',                component: PrivacidadPageComponent },
-  { path: 'privacidad',      component: PrivacidadPageComponent },
-  { path: 'terminos',        component: TermsyCondPageComponent },
-  { path: "404",             component: NotFoundComponent },
-  { path: "search/:t",       component: SearchComponent },
-  { path: "**",              redirectTo: "/404" },
+  { path: '',            component: HomeComponent },
+  { path: 'home',        component: HomeComponent },
+  { path: 'events',      component: EventosComponent },
+  { path: 'contact',     component: ContactoComponent },
+  { path: 'smart-pass',  component: SmartpassComponent },
+  { path: 'privacidad',  component: PrivacidadPageComponent },
+  { path: 'terminos',    component: TermsyCondPageComponent },
+  { path: "404",         component: NotFoundComponent },
+  { path: "search/:t",   component: SearchComponent },
+  { path: "**",          redirectTo: "/404" },
 ];
 
 @NgModule({
