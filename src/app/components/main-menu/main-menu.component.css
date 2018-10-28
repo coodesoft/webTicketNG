@@ -3,8 +3,8 @@
 .nav-link{
   font-family: lato, options,sans-serif;
   margin-left: 0px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   color: #333 !important;
 }
 
@@ -15,7 +15,7 @@
 
 .navbar-brand img { position: absolute; top: 0px; margin-top: 22px;margin-bottom: 12px; height: 72px;}
 
-.navbar{ height: 105px; background:#fafafa; }
+.navbar{ height: 105px; background:#fafafa; padding: 0rem 1rem; }
 .navbar-nav .active, .nav-item:hover {border-bottom: 5px solid #f31e1e;}
 
 nav .form-control{
