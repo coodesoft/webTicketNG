@@ -10,11 +10,11 @@ export class PublicacionService {
   constructor() { }
 
   private superDestacadaDummy = [
-    {'img':'','title':'Transformers'},
-    {'img':'','title':'Misión imposible'},
-    {'img':'','title':'Dragon Ball Z'},
-    {'img':'','title':'Relatos Salvajes'},
-    {'img':'','title':'Madagascar'}
+    {'img':'','title':'Transformers',     'imgPortada':''},
+    {'img':'','title':'Misión imposible', 'imgPortada':''},
+    {'img':'','title':'Dragon Ball Z',    'imgPortada':''},
+    {'img':'','title':'Relatos Salvajes', 'imgPortada':''},
+    {'img':'','title':'Madagascar',       'imgPortada':''}
   ]; // [Test] Datos de prueba para maquetacion
 
   getSuperDestacadas(){

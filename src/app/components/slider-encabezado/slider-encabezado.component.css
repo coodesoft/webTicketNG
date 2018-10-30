@@ -4,8 +4,22 @@
 	background-color: rgba(88, 212, 203, 0.5);
 }
 
-.cont-slider .carousel-item{
-	height: 880px;
+.app-cont-portada{
+	background-color: #ccc;
+	width: 16rem;
+	height: 22rem;
+}
+
+.cont-slider .carousel-item{ height: 880px; }
+.carousel-item { padding-top: 4rem; }
+
+.carousel-item .title{
+	background-color: rgba(0,0,0,0.8); color:#fff; 
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 2rem;
 }
 
 .carousel-control-prev, .carousel-control-next { width:auto; opacity: 1;}
@@ -13,6 +27,22 @@
 	width: 6rem; height: 6rem;
 	background: #ccc;
 	color:#000;
+}
+
+.app-btn-tickets, .app-btn-trailer{ 
+	color:#fff;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.app-btn-tickets{
+	background-color: #c50505;
+}
+
+.app-btn-trailer{
+	background-color: #263465;
 }
 
 .carousel-control-prev:hover span, .carousel-control-prev:focus span, .carousel-control-next:hover span, .carousel-control-next:focus span{

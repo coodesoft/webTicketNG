@@ -4,19 +4,19 @@
   </div>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item" *ngFor="let v of dataPubli let f = first" [ngClass]="{'active' : f}">
+      <div class="carousel-item" style="background: url({{v.img}}) no-repeat fixed center;" *ngFor="let v of dataPubli let f = first" [ngClass]="{'active' : f}">
         <div class="container">
           <div class="row">
-            <div class="col-auto">
-              <img class="d-block w-100" src="v.img" alt="{{v.title}}">
+            <div class="col-auto pl-0 pr-0">
+              <img class="d-block app-cont-portada" src="{{v.imgPortada}}" alt="{{v.title}}">
             </div>
             <div class="col">
               <div class="row">
-                <h2>{{v.title}}</h2>
+                <h2 class="title">{{v.title}}</h2>
               </div>
               <div class="row">
-                <div class="col-auto">Watch trailer</div>
-                <div class="col-auto">Buy tickets</div>
+                <div class="col-auto app-btn-trailer">Ver trailer</div>
+                <div class="col-auto app-btn-tickets">Comprar tickets</div>
                 <div class="col"></div>
               </div>
             </div>
