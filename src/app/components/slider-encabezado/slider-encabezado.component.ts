@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+
+import { PublicacionService } from './../../providers/publicacion.service';
 
 @Component({
   selector: 'app-slider-encabezado',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderEncabezadoComponent implements OnInit {
 
-  constructor() { }
+  private subscripcion;
+  private dataPubli;
+
+  constructor(
+    private publicacion:PublicacionService
+  ) { }
 
   ngOnInit() {
+    this.publicacion.getSuperDestacadas();
+    this.subscripcion = this.publicacion.superDestacadasLoaded.subscribe({  next: (r) => { this.dataPubli = r; } });
+  }
+
+  ngOnDestroy(){
+    this.subscripcion.unsubscribe();
   }
 
 }
