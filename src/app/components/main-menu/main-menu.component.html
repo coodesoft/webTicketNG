@@ -10,20 +10,20 @@
       <div class="col-sm-auto h-100">
         <ul class="navbar-nav mr-auto align-self-end h-100">
 
-          <li class="nav-item active">
-            <a class="nav-link" routerLink="/home" href="#/home">Home</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/events" href="#/home">Eventos</a>
+          <li class="nav-item" [routerLink]="['/home']" [routerLinkActive]="['active']">
+            <a class="nav-link">Home</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/smart-pass" href="#/home">Smart Pass</a>
+          <li class="nav-item" [routerLink]="['/events']" [routerLinkActive]="['active']">
+            <a class="nav-link">Eventos</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/contact" href="#/home">Contactenos</a>
+          <li class="nav-item" [routerLink]="['/smart-pass']" [routerLinkActive]="['active']">
+            <a class="nav-link">Smart Pass</a>
+          </li>
+
+          <li class="nav-item" [routerLink]="['/contact']" [routerLinkActive]="['active']">
+            <a class="nav-link">Contactenos</a>
           </li>
 
         </ul>

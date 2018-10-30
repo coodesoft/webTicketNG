@@ -20,7 +20,6 @@ export class MainMenuComponent implements OnInit {
   userName:string = '';
 
   enlaces:any=[
-    { r: "select-plan", t: 'PUBLICAR UNA PROPIEDAD', attr:'' }
   ];
 
   ngOnInit() {
@@ -30,9 +29,9 @@ export class MainMenuComponent implements OnInit {
     this.router.events.subscribe((e) => {
       if(e instanceof RouterEvent){
         if (e.url == '/select-plan' || e.url == '/update-plan'){
-          
+
         } else {
-         
+
         }
       }
     });
