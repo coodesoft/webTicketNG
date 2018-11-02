@@ -33,7 +33,10 @@
 	margin-top: 2rem;
 }
 
-.carousel-control-prev, .carousel-control-next { width:auto; font-size: 2.5em; font-weight: lighter; opacity: 1;}
+.carousel-control-prev, .carousel-control-next { 
+	width:auto; font-size: 2.5em; font-weight: lighter; opacity: 1;
+	top: -50%;
+}
 .carousel-control-prev span, .carousel-control-next span {
 	width: 4rem; height: 4rem;
 	background: #ccc;
