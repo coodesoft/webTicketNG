@@ -6,6 +6,8 @@
 }
 .cont-backg img { height: 100%; align-self: center; }
 
+.carousel-inner{ }
+
 .app-cs-m{
 	height: 50%;    width: 100%;
 	position: absolute;
@@ -19,6 +21,7 @@
 }
 
 .cont-slider .carousel-item{ height: 880px; }
+
 .carousel-item .container { padding-top: 4rem; }
 
 .carousel-item .title{

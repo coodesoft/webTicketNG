@@ -1,6 +1,6 @@
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="resaltados" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item" style="background: url({{v.img}}) no-repeat fixed center;" *ngFor="let v of dataPubli let f = first" [ngClass]="{'active' : f}">
+      <div class="carousel-item" *ngFor="let v of dataPubli let f = first" [ngClass]="{'active' : f}">
         <div class="container">
           <div class="row">
             <div class="col-auto pl-0 pr-0">
@@ -20,11 +20,11 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#resaltados" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"><</span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#resaltados" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true">></span>
       <span class="sr-only">Next</span>
     </a>
