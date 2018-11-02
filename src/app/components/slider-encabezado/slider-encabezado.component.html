@@ -1,10 +1,11 @@
 <div class="cont-slider">
-  <div class="app-cs-m">
-
-  </div>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item" style="background: url({{v.img}}) no-repeat fixed center;" *ngFor="let v of dataPubli let f = first" [ngClass]="{'active' : f}">
+      <div class="carousel-item" *ngFor="let v of dataPubli let f = first" [ngClass]="{'active' : f}">
+        <div class="cont-backg">
+          <img class="" src="{{v.img}}" alt="{{v.title}}">
+        </div>
+        <div class="app-cs-m"></div>
         <div class="container">
           <div class="row">
             <div class="col-auto pl-0 pr-0">
