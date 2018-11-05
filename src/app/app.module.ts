@@ -39,6 +39,7 @@ import { PublicidadComponent }       from './components/publicidad/publicidad.co
 import { OfertasComponent }          from './components/ofertas/ofertas.component';
 import { SliderEncabezadoComponent } from './components/slider-encabezado/slider-encabezado.component';
 import { ComprarComponent } from './pages/comprar/comprar.component';
+import { ImgEncabezadoComponent } from './components/img-encabezado/img-encabezado.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ComprarComponent } from './pages/comprar/comprar.component';
     PublicidadComponent,
     OfertasComponent,
     SliderEncabezadoComponent,
-    ComprarComponent
+    ComprarComponent,
+    ImgEncabezadoComponent
   ],
   imports: [
     BrowserModule,

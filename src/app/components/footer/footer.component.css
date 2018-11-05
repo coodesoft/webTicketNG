@@ -1,4 +1,9 @@
 
+.footer {
+  min-height: 200px;
+  background: #fff;
+}
+
 .scroll-to-top {
   float: right;
   width: 70px;
