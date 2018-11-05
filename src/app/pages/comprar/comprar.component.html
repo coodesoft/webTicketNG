@@ -1,16 +1,59 @@
 <app-img-encabezado></app-img-encabezado>
 <div class="container">
   <!-- Titulo -->
-  <div class="row">
+  <div class="row app-pd-top">
     <div class="col"></div>
-    <div class="col">
-      <h2>{{publicacion.titulo}}</h2>
+    <div class="col-auto">
+      <h2 class="tit-publi">{{publicacion.title}}</h2>
     </div>
   </div>
   <!-- descripcion -->
-  <div class="row">
+  <div class="row bg-white app-pd-top">
+    <div class="col-12  col-md-9">
+      <div class="row">
+        <div class="col-auto col-md-3">
+          <img class="d-block img-responsive" src="{{publicacion.imgPortada}}" alt="{{publicacion.title}}">
+        </div>
+        <div class="col-12 col-md-auto">
+          <div class="row">
+            <div class="col">
+              <h2 class="tit-publi-descript">{{publicacion.title}}</h2>
+              <app-puntuacion-ctrl></app-puntuacion-ctrl>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Category:</b><br><small>Adventure, Biography, Comedy</small></li>
+                <li class="list-group-item"><b>Release date:</b><br><small>25 July 2014</small></li>
+                <li class="list-group-item"><b>Duration:</b><br><small>120 minutes</small></li>
+                <li class="list-group-item"><b>Writers:</b><br><small>Trish G. Beaver, Wayne A. Colon</small></li>
+                <li class="list-group-item"><b>IMDb:</b><br><small>7.3</small></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Director:</b><br><small>Jay Lavender</small></li>
+                <li class="list-group-item"><b>Actors:</b><br><small>Gabriel Iglesias, Jacqueline Obradors</small></li>
+                <li class="list-group-item"><b>Age restriction:</b><br><small>15</small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <h2 class="tit-publi-descript">Funciones</h2>
+    </div>
+  </div>
+  <!-- argumento -->
+  <div class="row bg-white app-pd-top">
+    <div class="col">
+      <h2 class="tit-publi-descript">Argumento</h2>
+      <p>{{publicacion.argumento}}</p>
+    </div>
   </div>
   <!-- selector de ubicaciones -->
-  <div class="row">
+  <div class="row bg-white app-pd-top">
   </div>
 </div>

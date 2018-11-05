@@ -4,13 +4,27 @@ html, body{ height:100%; }
 
 body { background: #fafafa;}
 
-.btn-abs{
-  position: absolute;
+.bg-white { background-color: #fff; }
+.tit-publi { color:#fff;  background: rgba(0,0,0,0.7); padding: 10px 25px; }
+.tit-publi-descript { font-size: 40px; color: #c50505;  }
+.app-btn{	cursor:pointer; }
+
+.app-pd-top {
+	padding-top: 2rem;
 }
 
-.app-btn{
-	cursor:pointer;
+.app-cont-portada{
+	background-color: #ccc;
+	width: 16rem;
+	height: 22rem;
 }
+
+.img-responsive{
+  width: 100%; height: auto;
+}
+
+.btn-abs{  position: absolute; }
+
 
 .btn-fa:hover{
   color: #d01;

@@ -40,6 +40,7 @@ import { OfertasComponent }          from './components/ofertas/ofertas.componen
 import { SliderEncabezadoComponent } from './components/slider-encabezado/slider-encabezado.component';
 import { ComprarComponent } from './pages/comprar/comprar.component';
 import { ImgEncabezadoComponent } from './components/img-encabezado/img-encabezado.component';
+import { PuntuacionCtrlComponent } from './components/puntuacion-ctrl/puntuacion-ctrl.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ImgEncabezadoComponent } from './components/img-encabezado/img-encabeza
     OfertasComponent,
     SliderEncabezadoComponent,
     ComprarComponent,
-    ImgEncabezadoComponent
+    ImgEncabezadoComponent,
+    PuntuacionCtrlComponent
   ],
   imports: [
     BrowserModule,

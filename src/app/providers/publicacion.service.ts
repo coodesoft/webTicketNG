@@ -12,11 +12,16 @@ export class PublicacionService {
   constructor() { }
 
   private superDestacadaDummy = [
-    {'id':1, 'img':'assets/test/matrix2.jpg','title':'Matrix',     'imgPortada':'assets/test/matrix1.jpg'},
-    {'id':2, 'img':'assets/test/mision2.jpg','title':'Misión imposible', 'imgPortada':'assets/test/mision1.jpg'},
-    {'id':3, 'img':'assets/test/dragon2.jpg','title':'Dragon Ball Z',    'imgPortada':'assets/test/dragon1.jpg'},
-    {'id':4, 'img':'assets/test/relato2.jpg','title':'Relatos Salvajes', 'imgPortada':'assets/test/relato1.jpg'},
-    {'id':5, 'img':'assets/test/mada2.jpg','title':'Madagascar 2',     'imgPortada':'assets/test/mada1.jpg'}
+    {'id':1, 'img':'assets/test/matrix2.jpg','title':'Matrix',     'imgPortada':'assets/test/matrix1.jpg',
+    'argumento':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.'},
+    {'id':2, 'img':'assets/test/mision2.jpg','title':'Misión imposible', 'imgPortada':'assets/test/mision1.jpg',
+    'argumento':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.'},
+    {'id':3, 'img':'assets/test/dragon2.jpg','title':'Dragon Ball Z',    'imgPortada':'assets/test/dragon1.jpg',
+    'argumento':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.'},
+    {'id':4, 'img':'assets/test/relato2.jpg','title':'Relatos Salvajes', 'imgPortada':'assets/test/relato1.jpg',
+    'argumento':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.'},
+    {'id':5, 'img':'assets/test/mada2.jpg','title':'Madagascar 2',     'imgPortada':'assets/test/mada1.jpg',
+    'argumento':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique lacus. Nunc sit amet varius metus. Donec commodo sed ipsum nec varius. Cras non sem non massa pulvinar euismod. Nam rutrum ultricies tellus sed dictum. Maecenas porta, libero eu luctus molestie, velit ipsum ultrices quam, a suscipit nisl odio at risus. Donec nec sem a eros aliquam condimentum.'}
   ]; // [Test] Datos de prueba para maquetacion
 
   private destacadaDummy = [
@@ -43,6 +48,7 @@ export class PublicacionService {
         data = item;
       }
     }
+
     this.publicacionLoaded.next(data);
   }
 }

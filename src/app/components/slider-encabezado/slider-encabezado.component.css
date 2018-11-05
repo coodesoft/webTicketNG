@@ -14,12 +14,6 @@
 	background-color: rgba(88, 212, 203, 0.5);
 }
 
-.app-cont-portada{
-	background-color: #ccc;
-	width: 16rem;
-	height: 22rem;
-}
-
 .cont-slider .carousel-item{ height: 880px; }
 
 .carousel-item .container { padding-top: 4rem; }
