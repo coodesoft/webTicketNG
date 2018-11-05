@@ -7,6 +7,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 export class PublicacionService {
   public superDestacadasLoaded = new BehaviorSubject<any>([]);
   public destacadasLoaded      = new BehaviorSubject<any>([]);
+  public publicacionLoaded     = new BehaviorSubject<any>([]);
 
   constructor() { }
 
@@ -33,5 +34,15 @@ export class PublicacionService {
 
   getDestacadas(){
     this.destacadasLoaded.next(this.superDestacadaDummy);
+  }
+
+  getPublicacionData(id){
+    let data:any = [];
+    for (let item of this.superDestacadaDummy){
+      if (item.id == id){
+        data = item;
+      }
+    }
+    this.publicacionLoaded.next(data);
   }
 }

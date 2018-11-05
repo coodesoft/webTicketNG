@@ -11,6 +11,7 @@ import { HomeComponent }      from './pages/home/home.component';
 import { ContactoComponent }  from './pages/contacto/contacto.component';
 import { EventosComponent }   from './pages/eventos/eventos.component';
 import { SmartpassComponent } from './pages/smartpass/smartpass.component';
+import { ComprarComponent }   from './pages/comprar/comprar.component';
 
 const routes: Routes = [
   { path: '',            component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'contact',     component: ContactoComponent },
   { path: 'smart-pass',  component: SmartpassComponent },
   { path: 'privacidad',  component: PrivacidadPageComponent },
+  { path: 'comprar/:id', component: ComprarComponent },
   { path: 'terminos',    component: TermsyCondPageComponent },
   { path: "404",         component: NotFoundComponent },
   { path: "search/:t",   component: SearchComponent },

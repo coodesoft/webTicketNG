@@ -11,6 +11,7 @@ import { AppRoutingModule }  from './app-routing.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { ConfigService }        from './providers/config.service';
+import { CompraService }        from './providers/compra.service';
 import { TextsService }         from './providers/texts.service';
 
 import { PrivacidadPageComponent } from './pages/privacidad-page/privacidad-page.component';
@@ -37,6 +38,7 @@ import { CategorizadosComponent }    from './components/categorizados/categoriza
 import { PublicidadComponent }       from './components/publicidad/publicidad.component';
 import { OfertasComponent }          from './components/ofertas/ofertas.component';
 import { SliderEncabezadoComponent } from './components/slider-encabezado/slider-encabezado.component';
+import { ComprarComponent } from './pages/comprar/comprar.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,8 @@ import { SliderEncabezadoComponent } from './components/slider-encabezado/slider
     CategorizadosComponent,
     PublicidadComponent,
     OfertasComponent,
-    SliderEncabezadoComponent
+    SliderEncabezadoComponent,
+    ComprarComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,7 @@ import { SliderEncabezadoComponent } from './components/slider-encabezado/slider
   providers: [
     {provide: LOCALE_ID, useValue: 'es'},
     {provide: LocationStrategy, useClass: HashLocationStrategy},
-    ConfigService,
+    ConfigService, CompraService,
     TextsService
   ],
   bootstrap: [

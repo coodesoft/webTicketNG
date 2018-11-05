@@ -8,6 +8,10 @@ body { background: #fafafa;}
   position: absolute;
 }
 
+.app-btn{
+	cursor:pointer;
+}
+
 .btn-fa:hover{
   color: #d01;
 }

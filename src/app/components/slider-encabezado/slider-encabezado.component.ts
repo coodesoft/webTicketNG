@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { PublicacionService } from './../../providers/publicacion.service';
+import { CompraService }      from './../../providers/compra.service';
 
 @Component({
   selector: 'app-slider-encabezado',
@@ -13,7 +14,8 @@ export class SliderEncabezadoComponent implements OnInit {
   private dataPubli;
 
   constructor(
-    private publicacion:PublicacionService
+    private publicacion:PublicacionService,
+    private comprar:CompraService
   ) { }
 
   ngOnInit() {
@@ -23,6 +25,10 @@ export class SliderEncabezadoComponent implements OnInit {
 
   ngOnDestroy(){
     this.subscripcion.unsubscribe();
+  }
+
+  goToCompra(id){
+    this.comprar.goToCompra(id);
   }
 
 }

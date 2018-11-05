@@ -1,5 +1,5 @@
 <div class="cont-slider">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
     <div class="carousel-inner">
       <div class="carousel-item" *ngFor="let v of dataPubli let f = first" [ngClass]="{'active' : f}">
         <div class="cont-backg">
@@ -16,8 +16,8 @@
                 <h2 class="title">{{v.title}}</h2>
               </div>
               <div class="row">
-                <div class="col-auto app-btn-trailer">Ver trailer</div>
-                <div class="col-auto app-btn-tickets">Comprar tickets</div>
+                <div class="col-auto app-btn app-btn-trailer">Ver trailer</div>
+                <div class="col-auto app-btn app-btn-tickets" (click)="goToCompra(v.id)">Comprar tickets</div>
                 <div class="col"></div>
               </div>
             </div>
