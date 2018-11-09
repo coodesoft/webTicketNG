@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+
+import { PublicidadService } from './../../providers/publicidad.service';
 
 @Component({
   selector: 'app-publicidad',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicidadComponent implements OnInit {
 
-  constructor() { }
+  dataPubli:any = [];
+
+  private subscripcion;
+
+  constructor(
+  	private publis: PublicidadService
+  ) { }
 
   ngOnInit() {
+  	this.publis.getPublicidades();
+  	this.subscripcion = this.publis.publicidadLoaded.subscribe({  next: (r) => { this.dataPubli = r; } });
   }
 
 }
