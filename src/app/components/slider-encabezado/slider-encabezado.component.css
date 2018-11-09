@@ -37,11 +37,21 @@
 }
 
 .app-btn-tickets, .app-btn-trailer{
-	color:#fff;
+	color:#fff !important;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+}
+
+.app-btn-tickets i, .app-btn-trailer i{
+	color:#fff !important;
+	background-color: #000;
+	border-radius: 100%;
+	text-align: center;
+	padding-top: 0.25rem;
+	width: 25px;
+	height: 25px;
 }
 
 .app-btn-tickets{

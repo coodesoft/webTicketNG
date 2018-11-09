@@ -13,6 +13,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ConfigService }        from './providers/config.service';
 import { CompraService }        from './providers/compra.service';
 import { TextsService }         from './providers/texts.service';
+import { PublicidadService }    from './providers/publicidad.service';
 
 import { PrivacidadPageComponent } from './pages/privacidad-page/privacidad-page.component';
 import { TermsyCondPageComponent } from './pages/termsy-cond-page/termsy-cond-page.component';
@@ -76,7 +77,7 @@ import { PuntuacionCtrlComponent } from './components/puntuacion-ctrl/puntuacion
   providers: [
     {provide: LOCALE_ID, useValue: 'es'},
     {provide: LocationStrategy, useClass: HashLocationStrategy},
-    ConfigService, CompraService,
+    ConfigService, CompraService, PublicidadService,
     TextsService
   ],
   bootstrap: [

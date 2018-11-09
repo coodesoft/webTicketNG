@@ -10,7 +10,7 @@ export class PublicidadService {
 
 	private dummyData = [
 		{'text':'Banner', 'img':''},
-		{'text':'Banner', 'img':''},
+		{'text':'Banner', 'img':''}
 	];
 
   	constructor() { }
