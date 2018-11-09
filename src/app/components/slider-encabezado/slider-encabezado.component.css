@@ -32,7 +32,6 @@
 	top: -50%;
 }
 .carousel-control-prev span, .carousel-control-next span {
-	width: 4rem; height: 4rem;
 	background: #ccc;
 	color:#000;
 }

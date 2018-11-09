@@ -9,6 +9,13 @@ body { background: #fafafa;}
 .tit-publi-descript { font-size: 40px; color: #c50505;  }
 .app-btn{	cursor:pointer; }
 
+.app-stdbtn { 
+  min-width: 4rem; min-height: 4rem; 
+  text-align: center; vertical-align: middle; font-size: 3rem; 
+  background: #ccc;
+  color:#000;
+}
+
 .app-pd-top {
 	padding-top: 2rem;
 }

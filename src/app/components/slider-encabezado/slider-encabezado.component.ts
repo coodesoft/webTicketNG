@@ -11,7 +11,7 @@ import { CompraService }      from './../../providers/compra.service';
 export class SliderEncabezadoComponent implements OnInit {
 
   private subscripcion;
-  private dataPubli;
+  public dataPubli;
 
   constructor(
     private publicacion:PublicacionService,
