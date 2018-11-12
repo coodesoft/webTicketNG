@@ -1,0 +1,15 @@
+.nota-text { font-weight: lighter; font-size: 0.75rem; display:inline-block; padding-left: 5px; }
+
+.estrella {
+  display:inline-block;
+  margin-left:1px;
+  width:0.75rem; height:0.75rem;
+  border-radius: 100%;
+  background-color:#c50505;
+  position: relative;
+}
+
+.estrella img { position:absolute; width: 100%; height: 100%; }
+
+.pnt-disabled { background-color: #777; }
+.pnt-over     { background-color: rgb(255, 204, 51); }

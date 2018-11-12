@@ -1,0 +1,17 @@
+<div class="app-calendar">
+  <div class="row">
+    <div class="col text-center"><span class="mes-cont">{{mesDen[mes-2]}} {{anio}}</span></div>
+  </div>
+  <div class="row days-cont">
+    <div class="col pl-0 pr-0 day-abr" *ngFor="let v of daysAbr">
+      {{v}}
+    </div>
+  </div>
+  <div class="row semana-cont">
+    <div class="col pl-0 pr-0">
+      <div class="row" *ngFor="let v of daysAbr">
+
+      </div>
+    </div>
+  </div>
+</div>

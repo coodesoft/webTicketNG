@@ -1,0 +1,10 @@
+.app-calendar{ width: 100%; font-weight: lighter;}
+
+.mes-cont {
+  font-size: 1.25rem;
+}
+
+.days-cont {  margin-top: 0.5rem; }
+.semana-cont {}
+
+.day-abr { font-size: 1rem; }

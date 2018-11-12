@@ -42,6 +42,7 @@ import { SliderEncabezadoComponent } from './components/slider-encabezado/slider
 import { ComprarComponent } from './pages/comprar/comprar.component';
 import { ImgEncabezadoComponent } from './components/img-encabezado/img-encabezado.component';
 import { PuntuacionCtrlComponent } from './components/puntuacion-ctrl/puntuacion-ctrl.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { PuntuacionCtrlComponent } from './components/puntuacion-ctrl/puntuacion
     SliderEncabezadoComponent,
     ComprarComponent,
     ImgEncabezadoComponent,
-    PuntuacionCtrlComponent
+    PuntuacionCtrlComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,

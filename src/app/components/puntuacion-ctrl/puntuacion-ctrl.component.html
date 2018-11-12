@@ -1,3 +1,19 @@
-<p>
-  puntuacion-ctrl works!
-</p>
+<div class="w-100">
+  <div class="row">
+    <div class="col-auto">
+      <div class="row">
+        <div class="col est-cont">
+          <div class="estrella"
+            *ngFor="let v of estrellas; let i = index"
+            (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave(i)" (click)="click(i)"
+            [ngClass]="{'pnt-disabled':(v==0), 'pnt-over':(v==2) }">
+            <img src="assets/img/estrella.svg" />
+          </div>
+          <span class="nota-text">{{puntuacion}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>
